@@ -1,1 +1,33 @@
+*
+  box-sizing: border-box
+  outline: none
 
+@font-face 
+  font-family: "HK Grotesk Regular"
+  src: url(../fonts/HKGrotesk-Regular.woff) format("woff")
+  src: url(../fonts/HKGrotesk-Regular.woff2) format("woff2")
+  font-weight: normal
+  font-style: normal
+  
+@font-face 
+  font-family: "HK Grotesk Bold"
+  src: url(../fonts/HKGrotesk-Bold.woff) format("woff")
+  src: url(../fonts/HKGrotesk-Bold.woff2) format("woff2")
+  font-weight: normal
+  font-style: normal
+
+body
+  font-family: 'Open Sans', sans-serif
+  background-color: $background
+  overflow-x: hidden
+  margin: 0
+.container 
+  &-header
+    max-width: 1280px
+    margin: auto
+  &-footer
+    max-width: 1140px
+    margin: auto
+img
+  max-width: 100%
+  
