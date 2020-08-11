@@ -5,7 +5,10 @@
       max-width: 98%
     &-footer
       margin: auto
-      max-width: 92%
+      max-width: 993px
+  .footer
+    &-wrapper
+      width: 993px
 @media (max-width: 1150px)
   .container
     &-header
@@ -13,17 +16,24 @@
       max-width: 98%
     &-footer
       margin: auto
-      max-width: 92%
+      max-width: 87%
   .header
     &-menu
       width: 520px
+  .footer
+    &-wrapper
+      width: 900px
+    &-left
+      margin-right: 30px
+    &-right
+      width: 650px
 @media (max-width: 992px)
   .container
     &-header
       max-width: 98%
     &-footer
       margin: auto
-      max-width: 98%
+      max-width: 650px
   .header
     &-wrapper
       padding: 30px 39px 53px 39px
@@ -32,6 +42,24 @@
   .menu
     &__image
       display: inline
+  .footer
+    &-wrapper
+      width: 593px
+    &-left
+      margin-right: 68px
+    &-right
+      flex-wrap: wrap
+      width: 310px
+      padding-bottom: 73px
+    &-bottom
+      padding-bottom: 64px
+    &-links
+      &__link
+        &--mb-45
+          padding-bottom: 45px
+          color: $primary
+        &--mb-0
+          margin-bottom: 0
 @media (max-width: 768px)
   .container
     &-header
@@ -39,19 +67,135 @@
       max-width: 728px
     &-footer
       margin: auto
-      max-width: 98%
+      max-width: 593px
+  .footer
+    &-wrapper
+      width: 593px
+    &-left
+      margin-right: 68px
+    &-right
+      flex-wrap: wrap
+      width: 310px
+      padding-bottom: 73px
+    &-links
+      &__link
+        &--mb-45
+          padding-bottom: 45px
+          color: $primary
+        &--mb-0
+          margin-bottom: 0
+    &-bottom
+      padding-bottom: 64px
+@media (max-width: 700px)
+  .container
+    &-header
+      margin: auto
+      max-width: 728px
+    &-footer
+      margin: auto
+      max-width: 450px
+  .footer
+    &__text
+      text-align: center
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 24px
+    &-wrapper
+      width: 500px
+    &-left
+      display: flex
+      flex-direction: column
+      align-items: center
+      min-width: 242px
+      order: 2
+      margin-right: 0
+      margin: auto
+    &-right
+      flex-wrap: wrap
+      width: 300px
+      padding-bottom: 64px
+    &-links
+      &__link
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        &-main
+          font-style: normal
+          font-weight: bold
+          font-size: 16px
+          line-height: 22px
+        &--mb-45
+          padding-bottom: 45px
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 20px
+        &--mb-0
+          margin-bottom: 0
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 20px
+    &-bottom
+      display: none
+    &-copyright
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 24px
+      text-align: center
 @media (max-width: 576px)
   .body
     overflow: hidden
   .container
     &-header
       max-width: 96%
+    &-footer
+      margin: auto
+      width: 90%
+  .footer
+    &-wrapper
+      margin: auto
+      width: 90%
+    &-right
+      flex-wrap: wrap
+      width: 285px
+      padding-bottom: 47px
+    &-links
+      &__link
+        &--mb-45
+          padding-bottom: 45px
+          color: $primary
+        &--mb-0
+          margin-bottom: 0
+    &-bottom
+      padding-bottom: 64px
+    
 @media (max-width: 350px)
   .body
     overflow: hidden
   .container
     &-header
       max-width: 290px
+    &-footer
+      margin: auto
+      width: 320px
   .header
     &-wrapper
       padding: 18px 9px 42px 9px
+  .footer
+    &-wrapper
+      width: 264px
+      margin: auto
+    &-links
+      &__link
+        &--mb-45
+          padding-bottom: 45px
+          color: $primary
+        &--mb-0
+          margin-bottom: 0
+    &-right
+      width: 246px
+    
