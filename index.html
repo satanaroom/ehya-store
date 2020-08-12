@@ -54,7 +54,40 @@
       </div>
       <!-- /.container -->
     </header>
-    <div class="footer">
+    <section class="newsletter">
+      <div class="newsletter-wrapper">
+        <div class="newsletter-text">
+          <h2 class="newsletter__title">
+            Join Our Newsletter
+          </h2>
+          <p class="newsletter__text newsletter__text--strong">
+            Just insert your email into the field below. And you will get the
+            updates about fashion & styles from us.
+          </p>
+        </div>
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe newsletter__subscribe special"
+        >
+          <input
+            type="email"
+            class="subscribe__input"
+            placeholder="Your Emaill"
+            name="email"
+            required
+          />
+          <img
+            src="img/email-icon.svg"
+            alt="Icon: email icon"
+            class="subscribe__image"
+          />
+          <button class="subscribe__button">Subscribe</button>
+        </form>
+      </div>
+      <!-- /.newsletter-wrapper -->
+    </section>
+    <footer class="footer">
       <div class="container-footer">
         <div class="footer-wrapper">
           <div class="footer-left">
@@ -138,7 +171,7 @@
         <!-- /.footer-wrapper -->
       </div>
       <!-- /.container -->
-    </div>
+    </footer>
     <!-- /.footer -->
     <script src="js/main.js"></script>
   </body>

@@ -11,13 +11,6 @@ $message = $_POST['message'];
 $email = $_POST['email'];
 
 // Формирование самого письма
-$title = "Новое обращение Best Tour plan";
-$body = "
-<h2>Новое обращение</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
-";
 
 $titleNewsletter = "Подписка на новости";
 $bodyNewsletter = "
@@ -50,9 +43,7 @@ try {
 
   // Отправка сообщения
   $mail->isHTML(true);
-  $mail->Subject = $title;
   $mail->Subject = $titleNewsletter;
-  $mail->Body = $body;
   $mail->Body = $bodyNewsletter;
 
   // Проверяем отравленность сообщения
@@ -70,6 +61,4 @@ try {
 
 if ($email) {
   header('Location:newsletter.html');
-} else {
-  header('Location:thankyou.html');
 }
