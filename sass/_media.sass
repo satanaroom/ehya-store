@@ -1,3 +1,6 @@
+@media (max-width: 1350px)
+  .subscribe
+    width: 370px
 @media (max-width: 1280px)
   .container
     &-header
@@ -9,6 +12,21 @@
   .footer
     &-wrapper
       width: 993px
+  .newsletter
+    padding: 80px auto 80px auto
+    min-height: 402px
+    &-wrapper
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-wrap: wrap
+    &-text
+      margin-bottom: 20px
+      text-align: center
+    &__title
+      margin-bottom: 14px
+    .subscribe
+      min-width: 447px
 @media (max-width: 1150px)
   .container
     &-header
@@ -27,6 +45,19 @@
       margin-right: 30px
     &-right
       width: 650px
+  .newsletter
+    padding: 80px auto 80px auto
+    min-height: 402px
+    &-wrapper
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-wrap: wrap
+    &-text
+      margin-bottom: 20px
+      text-align: center
+    &__title
+      margin-bottom: 14px
 @media (max-width: 992px)
   .container
     &-header
@@ -59,6 +90,19 @@
           color: $primary
         &--mb-0
           margin-bottom: 0
+  .newsletter
+    padding: 85px 141px 80px 141px
+    min-height: 402px
+    &-wrapper
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-wrap: wrap
+    &-text
+      margin-bottom: 56px
+      text-align: center
+    &__title
+      margin-bottom: 14px
 @media (max-width: 768px)
   .container
     &-header
@@ -85,6 +129,19 @@
           margin-bottom: 0
     &-bottom
       padding-bottom: 64px
+  .newsletter
+    padding: 85px 141px 80px 141px
+    min-height: 402px
+    &-wrapper
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-wrap: wrap
+    &-text
+      margin-bottom: 56px
+      text-align: center
+    &__title
+      margin-bottom: 14px
 @media (max-width: 700px)
   .container
     &-header
@@ -145,6 +202,7 @@
       font-size: 14px
       line-height: 24px
       text-align: center
+    
 @media (max-width: 576px)
   .body
     overflow: hidden
@@ -197,4 +255,62 @@
           margin-bottom: 0
     &-right
       width: 246px
+  .newsletter
+    padding: 84px 20px 80px 20px
     
+    &-wrapper
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-wrap: wrap
+    &-text
+      margin-bottom: 56px
+      text-align: center
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 14px
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 28px
+    .newsletter
+      padding: 85px 141px 80px 141px
+      min-height: 402px
+      &-wrapper
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-wrap: wrap
+      &-text
+        margin-bottom: 56px
+        text-align: center
+      &__title
+        margin-bottom: 14px
+      &__subscribe
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        max-width: 280px
+        height: 150px
+    .subscribe
+      min-width: 280px
+      &__input 
+        position: absolute
+        padding: 0 10px 0 50px
+        width: 100%
+        height: 48px
+      &__button
+        position: absolute
+        min-width: 280px
+        height: 48px
+        top: 58px
+        left: 0
+      &__image
+        position: absolute
+        top: 16px
+        
+      

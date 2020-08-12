@@ -6,17 +6,15 @@ require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
-$phone = $_POST['phone'];
-$message = $_POST['message'];
 $email = $_POST['email'];
+$text = $_POST['text'];
+
 
 // Формирование самого письма
-
-$titleNewsletter = "Подписка на новости";
-$bodyNewsletter = "
-<h2>Новая подписка</h2>
-<b>Email:</b> $email<br>
-
+$title = "New subscribe Ehya Store";
+$body = "
+<h2>New subscribe</h2>
+<b>Email:</b> $email<br><br>
 ";
 
 // Настройки PHPMailer
@@ -25,7 +23,7 @@ try {
   $mail->isSMTP();
   $mail->CharSet = "UTF-8";
   $mail->SMTPAuth   = true;
-  //$mail->SMTPDebug = 2;
+  $mail->SMTPDebug = 2;
   $mail->Debugoutput = function ($str, $level) {
     $GLOBALS['status'][] = $str;
   };
@@ -43,8 +41,8 @@ try {
 
   // Отправка сообщения
   $mail->isHTML(true);
-  $mail->Subject = $titleNewsletter;
-  $mail->Body = $bodyNewsletter;
+  $mail->Subject = $title;
+  $mail->Body = $body;
 
   // Проверяем отравленность сообщения
   if ($mail->send()) {
@@ -58,7 +56,4 @@ try {
 }
 
 // Отображение результата
-
-if ($email) {
-  header('Location:newsletter.html');
-}
+header('Location:newsletter.html');
