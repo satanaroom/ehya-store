@@ -73,11 +73,50 @@
     &-footer
       margin: auto
       max-width: 650px
+  body
+    padding-top: 116px
   .header
+    &--mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 1000
+        background-color: #fff
     &-wrapper
       padding: 30px 39px 53px 39px
     &-menu
       display: none
+      position: fixed
+      padding: 36px 24px
+      right: 39px
+      top: 20px
+      margin: 0
+      max-width: 304px
+      height: 324px
+      background-color: #fff
+      flex-direction: column
+      align-items: start
+      box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
+      &__button
+        display: inline
+        position: absolute
+        cursor: pointer
+        top: 15px
+        right: 15px
+      &__link
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        text-align: center
+        margin-bottom: 20px
+        &-get
+          display: block
+          padding: 8px 86px
+      &--visible
+        display: flex
     &__image
       display: inline
   .footer
@@ -88,13 +127,7 @@
     &-right
       flex-wrap: wrap
       width: 310px
-      padding-bottom: 73px
-      &__link
-        &--mb-45
-          padding-bottom: 45px
-          color: $primary
-        &--mb-0
-          margin-bottom: 0
+      padding-bottom: 62px
     &-bottom
       padding-bottom: 64px
   .newsletter
@@ -122,6 +155,9 @@
     &-footer
       margin: auto
       max-width: 593px
+  .header
+    &-menu
+      right: 40px
   .footer
     &-wrapper
       width: 593px
@@ -130,13 +166,7 @@
     &-right
       flex-wrap: wrap
       width: 310px
-      padding-bottom: 73px
-      &__link
-        &--mb-45
-          padding-bottom: 45px
-          color: $primary
-        &--mb-0
-          margin-bottom: 0
+      padding-bottom: 62px
     &-bottom
       padding-bottom: 64px
   .newsletter
@@ -184,7 +214,10 @@
     &-right
       flex-wrap: wrap
       width: 300px
-      padding-bottom: 64px
+      padding-bottom: 45px
+      &__item
+        &--mb-45
+          margin-bottom: 39px
       &__link
         font-style: normal
         font-weight: normal
@@ -195,18 +228,6 @@
           font-weight: bold
           font-size: 16px
           line-height: 22px
-        &--mb-45
-          padding-bottom: 45px
-          font-style: normal
-          font-weight: normal
-          font-size: 14px
-          line-height: 20px
-        &--mb-0
-          margin-bottom: 0
-          font-style: normal
-          font-weight: normal
-          font-size: 14px
-          line-height: 20px
     &-bottom
       display: none
     &-copyright
@@ -237,13 +258,7 @@
     &-right
       flex-wrap: wrap
       width: 285px
-      padding-bottom: 47px
-      &__link
-        &--mb-45
-          padding-bottom: 45px
-          color: $primary
-        &--mb-0
-          margin-bottom: 0
+      padding-bottom: 45px
     &-bottom
       padding-bottom: 64px
   .newsletter
@@ -304,6 +319,9 @@
       flex-wrap: wrap
       margin: auto
       width: 320px
+  .header
+    &-menu
+      right: 28px
 @media (max-width: 350px)
   .body
     overflow: hidden
@@ -316,18 +334,21 @@
   .header
     &-wrapper
       padding: 18px 9px 42px 9px
+    &-menu
+      top: 10px
+      right: 10px
   .footer
     &-wrapper
       width: 264px
       margin: auto
     &-right
       width: 246px
-      &__link
+      &__item
+        margin-bottom: 15px
         &--mb-45
-          padding-bottom: 45px
-          color: $primary
-        &--mb-0
-          margin-bottom: 0
+          margin-bottom: 39px
+        &-main
+          margin-bottom: 20px
   .newsletter
     padding: 64px 10px 64px 10px
     min-height: 414px

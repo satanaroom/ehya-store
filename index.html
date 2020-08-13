@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header header--mobile_fixed">
       <div class="container-header">
         <div class="header-wrapper">
           <a href="#" class="logo">
@@ -24,6 +24,13 @@
             />
           </a>
           <ul class="header-menu">
+            <li class="header-menu__item">
+              <img
+                src="img/close.svg"
+                alt="Icon: close"
+                class="header-menu__button"
+              />
+            </li>
             <li class="header-menu__item">
               <a href="#" class="header-menu__link">Home</a>
             </li>
@@ -43,16 +50,15 @@
               <a href="#" class="header-menu__link-get">Get it now</a>
             </li>
           </ul>
-          <!-- /.header-menu -->
           <img
             src="img/Mobile-menu.svg"
             alt="Logo: mobile menu"
             class="header__image"
           />
         </div>
-        <!-- /.navbar-panel -->
+        <!-- /.header-wrapper -->
       </div>
-      <!-- /.container -->
+      <!-- /.container-header -->
     </header>
     <section class="newsletter">
       <div class="newsletter-wrapper">
@@ -129,34 +135,76 @@
           </div>
           <!-- /.footer-left -->
           <div class="footer-right">
-            <ul class="footer-right__item">
-              <li class="footer-right__link-main">Product</li>
-              <li class="footer-right__link">Landingpage</li>
-              <li class="footer-right__link">Features</li>
-              <li class="footer-right__link">Documentation</li>
-              <li class="footer-right__link">Referral Program</li>
-              <li class="footer-right__link--mb-45">Pricing</li>
+            <ul class="footer-right__items">
+              <li class="footer-right__item-main">
+                <a href="#" class="footer-right__link-main">Product</a>
+              </li>
+              <li class="footer-right__item">
+                <a href="#" class="footer-right__link">Landingpage</a>
+              </li>
+              <li class="footer-right__item">
+                <a href="#" class="footer-right__link">Features</a>
+              </li>
+              <li class="footer-right__item">
+                <a href="#" class="footer-right__link">Documentation</a>
+              </li>
+              <li class="footer-right__item">
+                <a href="#" class="footer-right__link">Referral Program</a>
+              </li>
+              <li class="footer-right__item footer-right__item--mb-45">
+                <a href="#" class="footer-right__link">Pricing</a>
+              </li>
             </ul>
-            <ul class="footer-right__item">
-              <li class="footer-right__link-main">Services</li>
-              <li class="footer-right__link">Documentation</li>
-              <li class="footer-right__link">Design</li>
-              <li class="footer-right__link">Themes</li>
-              <li class="footer-right__link">Illustrations</li>
-              <li class="footer-right__link--mb-45">UI Kit</li>
+            <ul class="footer-right__items">
+              <li class="footer-right__item-main">
+                <a href="#" class="footer-right__link-main">Services</a>
+              </li>
+              <li class="footer-right__item">
+                <a href="#" class="footer-right__link">Documentation</a>
+              </li>
+              <li class="footer-right__item">
+                <a href="#" class="footer-right__link">Design</a>
+              </li>
+              <li class="footer-right__item">
+                <a href="#" class="footer-right__link">Themes</a>
+              </li>
+              <li class="footer-right__item">
+                <a href="#" class="footer-right__link">Illustrations</a>
+              </li>
+              <li class="footer-right__item footer-right__item--mb-45">
+                <a href="#" class="footer-right__link">UI Kit</a>
+              </li>
             </ul>
-            <ul class="footer-right__item">
-              <li class="footer-right__link-main">Company</li>
-              <li class="footer-right__link">About</li>
-              <li class="footer-right__link">Terms</li>
-              <li class="footer-right__link">Privacy Policy</li>
-              <li class="footer-right__link--mb-0">Careers</li>
+            <ul class="footer-right__items">
+              <li class="footer-right__item-main">
+                <a href="#" class="footer-right__link-main">Company</a>
+              </li>
+              <li class="footer-right__item">
+                <a href="#" class="footer-right__link">About</a>
+              </li>
+              <li class="footer-right__item">
+                <a href="#" class="footer-right__link">Terms</a>
+              </li>
+              <li class="footer-right__item">
+                <a href="#" class="footer-right__link">Privacy Policy</a>
+              </li>
+              <li class="footer-right__item footer-right__item--mb-0">
+                <a href="#" class="footer-right__link">Careers</a>
+              </li>
             </ul>
-            <ul class="footer-right__item">
-              <li class="footer-right__link-main">More</li>
-              <li class="footer-right__link">Documentation</li>
-              <li class="footer-right__link">License</li>
-              <li class="footer-right__link--mb-0">Changelog</li>
+            <ul class="footer-right__items">
+              <li class="footer-right__item-main">
+                <a href="#" class="footer-right__link-main">More</a>
+              </li>
+              <li class="footer-right__item">
+                <a href="#" class="footer-right__link">Documentation</a>
+              </li>
+              <li class="footer-right__item">
+                <a href="#" class="footer-right__link">License</a>
+              </li>
+              <li class="footer-right__item footer-right__item--mb-0">
+                <a href="#" class="footer-right__link">Changelog</a>
+              </li>
             </ul>
           </div>
           <!-- /.footer-right -->
@@ -173,6 +221,7 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
