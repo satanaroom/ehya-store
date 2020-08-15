@@ -39,4 +39,13 @@ $(document).ready(function () {
     $(activeContent).addClass("trending__cards--active");
     $(this).addClass("trending__item--active");
   });
+
+  // Слайдер не автоматический
+  var mySwiper = new Swiper(".swiper-container", {
+    // Navigation arrows
+    navigation: {
+      nextEl: ".slider-button--next",
+      prevEl: ".slider-button--prev",
+    },
+  });
 });
