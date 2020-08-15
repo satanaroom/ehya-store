@@ -9,6 +9,9 @@
     &-footer
       margin: auto
       max-width: 993px
+    &-trending
+      margin: auto
+      max-width: 95%
   .footer
     &-wrapper
       width: 993px
@@ -39,6 +42,8 @@
     &-footer
       margin: auto
       max-width: 87%
+    &-trending
+      max-width: 70%
   .header
     &-menu
       width: 520px
@@ -66,6 +71,20 @@
       text-align: center
     &__title
       margin-bottom: 14px
+  .trending
+    &__card-1, 
+    &__card-2,
+    &__card-3,
+    &__card-4,
+    &__card-5,
+    &__card-6,
+    &__card-7,
+    &__card-8
+      width: 280px
+    &__cards
+      justify-content: space-evenly
+    &-tabs
+      width: 315px
 @media (max-width: 992px)
   .container
     &-header
@@ -73,6 +92,8 @@
     &-footer
       margin: auto
       max-width: 650px
+    &-trending
+      max-width: 608px
   body
     padding-top: 116px
   .header
@@ -148,6 +169,19 @@
     &-wrapper
       margin: auto
       width: 600px
+  .trending
+    &__top
+      flex-direction: column
+      margin-bottom: 45px
+    &-tabs
+      width: 366px
+      margin: 0
+    &__cards
+      justify-content: space-between
+    &-title
+      margin-bottom: 28px
+    &-wrapper
+      margin-bottom: 20px
 @media (max-width: 768px)
   .container
     &-header
@@ -195,6 +229,8 @@
     &-footer
       margin: auto
       max-width: 450px
+    &-trending
+      max-width: 95%
   .footer
     &__text
       text-align: center
@@ -249,6 +285,27 @@
   .thanksyou
     &-wrapper
       width: 400px
+  .trending
+    &__card-1, 
+    &__card-2,
+    &__card-3,
+    &__card-4,
+    &__card-5,
+    &__card-6,
+    &__card-7,
+    &__card-8
+      width: 240px
+    &__image
+      height: 350px
+    &-title
+      font-size: 28px
+      line-height: 36px
+    &-tabs
+      width: 290px
+      font-size: 16px
+      line-height: 22px
+    &__cards
+      justify-content: space-evenly
 @media (max-width: 576px)
   .body
     overflow: hidden
@@ -258,6 +315,8 @@
     &-footer
       margin: auto
       width: 90%
+    &-trending
+      max-width: 290px
   .footer
     &-wrapper
       margin: auto
@@ -332,6 +391,42 @@
       right: 28px
   em
     top: 110px
+  .trending
+    &__card-1, 
+    &__card-2,
+    &__card-3,
+    &__card-4,
+    &__card-5,
+    &__card-6,
+    &__card-7,
+    &__card-8
+      width: 140px
+    &__image
+      height: 170px
+    &-title
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 24px
+    &-tabs
+      width: 290px
+      font-size: 16px
+      line-height: 22px
+    &__top
+      margin-bottom: 36px
+    &__title
+      font-size: 16px
+      line-height: 20px
+    &__price
+      font-size: 14px
+      line-height: 24px
+      margin-right: 9px
+    &__bottom
+      justify-content: start
+      margin-bottom: 30px 
+    &__cards
+      justify-content: space-between
+    &-wrapper
+      margin-bottom: 30px
 @media (max-width: 350px)
   .body
     overflow: hidden
