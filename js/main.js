@@ -40,17 +40,8 @@ $(document).ready(function () {
     $(this).addClass("trending__item--active");
   });
 
-  // Слайдер не автоматический
-  var mySwiper = new Swiper(".story-slider", {
-    // Navigation arrows
-    navigation: {
-      nextEl: ".slider-button--next",
-      prevEl: ".slider-button--prev",
-    },
-  });
-
   // Слайдер автоматический
-  var mySwiper = new Swiper(".callback-slider", {
+  var callbackSleder = new Swiper(".callback-slider", {
     loop: true,
     spaceBetween: 30,
     centeredSlides: true,
@@ -61,6 +52,15 @@ $(document).ready(function () {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+  });
+
+  // Слайдер не автоматический
+  var storySlider = new Swiper(".story-slider", {
+    // Navigation arrows
+    navigation: {
+      nextEl: ".slider-button--next",
+      prevEl: ".slider-button--prev",
     },
   });
 });
