@@ -41,11 +41,26 @@ $(document).ready(function () {
   });
 
   // Слайдер не автоматический
-  var mySwiper = new Swiper(".swiper-container", {
+  var mySwiper = new Swiper(".story-slider", {
     // Navigation arrows
     navigation: {
       nextEl: ".slider-button--next",
       prevEl: ".slider-button--prev",
+    },
+  });
+
+  // Слайдер автоматический
+  var mySwiper = new Swiper(".callback-slider", {
+    loop: true,
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 7000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
   });
 });
