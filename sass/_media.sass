@@ -1,6 +1,10 @@
 @media (max-width: 1350px)
   .subscribe
     width: 370px
+  .main
+    &-wrapper
+      width: 1100px
+      background-position: 300% 40%
 @media (max-width: 1280px)
   .container
     &-header
@@ -143,6 +147,11 @@
   .swiper
     &-container
       width: 682px
+  .main
+    &-wrapper
+      width: 900px
+      background-position: -150% 40%
+      padding: 33px 0 0 60px
 @media (max-width: 992px)
   .container
     &-header
@@ -249,6 +258,29 @@
       margin-bottom: 36px
     &-slider
       width: 630px
+  .main
+    &-wrapper
+      width: 728px
+      min-height: 624px
+      background-position: 0% 40%
+      padding: 36px 0 0 28px
+    &__image
+      margin-bottom: 24px
+    &__title
+      font-size: 48px
+      line-height: 60px
+      margin-bottom: 20px
+      width: 430px
+      margin-bottom: 20px
+    &__info
+      font-size: 18px
+      line-height: 32px
+      width: 400px
+      margin-bottom: 36px
+    &__button
+      margin-bottom: 40px
+    &__items
+      width: 408px
 @media (max-width: 768px)
   .container
     &-header
@@ -291,6 +323,10 @@
   .story
     &__line
       margin-bottom: 80px
+@media (max-width: 750px)
+  .main
+    &-wrapper
+      width: 690px
 @media (max-width: 700px)
   .container
     &-header
@@ -459,7 +495,11 @@
       font-weight: normal
       font-size: 18px
       line-height: 36px
-      
+  .main
+    &-wrapper
+      width: 500px
+      background-position: 20% 40%
+      padding: 30px 0 0 15px
 @media (max-width: 576px)
   .body
     overflow: hidden
@@ -590,6 +630,46 @@
     &__image
       width: 70px
       height: 81px
+  .main
+    &-wrapper
+      width: 320px
+      padding: 0
+      padding-top: 381px
+      display: flex
+      flex-direction: column
+      align-items: center
+      
+      background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 25%, #E8EAE9 100%), url(../img/main.jpg)
+      background-position: 50% 50%
+      min-height: 900px
+    &__image
+      width: 196px
+      height: 35px
+      margin-bottom: 20px
+    &__title
+      font-size: 32px
+      line-height: 40px
+      text-align: center
+      width: 300px
+      margin-bottom: 20px
+    &__info
+      font-size: 16px
+      line-height: 28px
+      width: 300px
+      text-align: center
+      margin-bottom: 24px
+    &__button
+      padding: 11px 48px
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 24px
+    &__items
+      width: 320px   
+      flex-wrap: wrap
+      justify-content: space-evenly
+    &__icon
+      width: 24px
+      height: 24px
 @media (max-width: 350px)
   .body
     overflow: hidden
