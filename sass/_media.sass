@@ -715,8 +715,9 @@
       width: 24px
       height: 24px
 @media (max-width: 350px)
-  .body
-    overflow: hidden
+  body
+    width: 320px
+    
   .container
     &-header
       max-width: 290px
@@ -814,6 +815,7 @@
       flex-direction: column
       align-items: center
   .story
+    width: 320px
     &__line
       width: 280px
     &__image
@@ -829,7 +831,10 @@
       width: 270px
     &-wrapper
       width: 280px
-      
+  .header
+    &--mobile
+      &_fixed
+        width: 320px
   .swiper
     &-container
       
