@@ -16,6 +16,9 @@
     &-trending
       margin: auto
       max-width: 95%
+  .header
+    &-wrapper
+      width: 900px
   .footer
     &-wrapper
       width: 993px
@@ -40,7 +43,6 @@
       width: 1000px
   .story
     &-wrapper
-      margin: auto
       width: 1080px
     &__line
       width: 1080px
@@ -48,13 +50,11 @@
   .container
     &-header
       margin: auto
-      max-width: 98%
     &-footer
       margin: auto
       max-width: 87%
     &-trending
       max-width: 70%
-  .header
     &-menu
       width: 520px
   .footer
@@ -115,7 +115,6 @@
     &__line
       width: 672px
     &-wrapper
-      margin: auto
       width: 672px
     &__image
       width: 322px
@@ -128,6 +127,8 @@
       flex-direction: column
       margin-bottom: 80px
     &__left
+      
+      margin: auto
       display: flex
       flex-direction: column
       align-items: center
@@ -162,7 +163,7 @@
     &-trending
       max-width: 608px
   body
-    padding-top: 116px
+    padding-top: 106px
   .header
     &--mobile
       &_fixed
@@ -173,7 +174,9 @@
         z-index: 1000
         background-color: #fff
     &-wrapper
-      padding: 30px 39px 53px 39px
+      width: 650px
+      padding-top: 31px
+      padding-bottom: 48px
     &-menu
       display: none
       position: fixed
@@ -342,6 +345,11 @@
       width: 95% 
     &-story
       width: 350px
+  .header
+    &-wrapper
+      width: 500px
+      padding-top: 26px
+      padding-bottom: 48px
   .footer
     &__text
       text-align: center
@@ -453,6 +461,8 @@
   .story
     width: 340px
     margin: auto
+    &__left
+      width: 350px
     &__line
       width: 340px
       margin-bottom: 47px
@@ -496,13 +506,16 @@
       font-size: 18px
       line-height: 36px
   .main
+    &__title
+      width: 300px
     &-wrapper
       width: 500px
       background-position: 20% 40%
       padding: 30px 0 0 15px
 @media (max-width: 576px)
-  .body
-    overflow: hidden
+  body
+    padding-top: 92px
+    
   .container
     &-header
       max-width: 96%
@@ -511,6 +524,14 @@
       width: 90%
     &-trending
       max-width: 290px
+    &-main
+      width: 100%
+      margin: auto
+  .header
+    &-wrapper
+      width: 272px
+      padding-top: 18px
+      padding-bottom: 42px
   .footer
     &-wrapper
       margin: auto
@@ -595,12 +616,23 @@
     &__card-7,
     &__card-8
       width: 140px
+    &__card-8
+      height: 170px
+      padding: 40px 23px 29px 23px
+    &__more
+      font-size: 20px
+      line-height: 24px
+    &__icon
+      max-width: 25px
+      height: 23px
     &__image
       height: 170px
+      margin-bottom: 13px
     &-title
       font-size: 28px
       line-height: 36px
       margin-bottom: 24px
+      margin-left: 0
     &-tabs
       width: 290px
       font-size: 16px
@@ -610,17 +642,28 @@
     &__title
       font-size: 16px
       line-height: 20px
+      margin-left: 0
+      font-family: "HK Grotesk Regular"
     &__price
       font-size: 14px
       line-height: 24px
       margin-right: 9px
+      margin-left: 0
     &__bottom
       justify-content: start
+      
       margin-bottom: 30px 
     &__cards
       justify-content: space-between
     &-wrapper
       margin-bottom: 30px
+    &__cart
+      width: 16px
+      height: 16px
+      margin-top: 0
+    &__link
+      width: 16px
+      height: 16px
   .callback
     &__text
       min-height: 250px
@@ -632,13 +675,14 @@
       height: 81px
   .main
     &-wrapper
-      width: 320px
+      width: 100%
+      margin-bottom: 64px
       padding: 0
       padding-top: 381px
       display: flex
       flex-direction: column
       align-items: center
-      
+      border-radius: 0
       background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 25%, #E8EAE9 100%), url(../img/main.jpg)
       background-position: 50% 50%
       min-height: 900px
@@ -681,9 +725,6 @@
       width: 320px
     &-advantages
       width: 290px
-  .header
-    &-wrapper
-      padding: 18px 9px 42px 9px
     &-menu
       top: 10px
       right: 10px
@@ -783,6 +824,8 @@
     &__card-1,
     &__card-2
       width: 280px
+    &__left
+      width: 270px
     &-info 
       width: 270px
   .swiper
@@ -792,4 +835,5 @@
     &-wrapper
       margin-bottom: 18px
   .slider
+    margin: auto
     width: 280px

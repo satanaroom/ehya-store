@@ -1,4 +1,6 @@
 .trending
+  &__link
+    text-decoration: none
   &-wrapper
     display: flex
     align-items: center
@@ -22,6 +24,25 @@
   &__card-7,
   &__card-8
     width: 260px
+  &__card-8
+    padding: 120px 74px 104px 74px
+    background-color: $link
+    height: 350px
+    border-radius: 8px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    
+  &__more
+    font-family: "HK Grotesk Regular"
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 32px
+    text-align: center
+    letter-spacing: 0.2px
+    color: $white
   &-title
     margin: 0
     font-family: "HK Grotesk Bold"
@@ -37,7 +58,7 @@
     justify-content: space-between
     width: 366px
     font-style: normal
-    font-weight: bold
+    font-weight: normal
     font-size: 18px
     line-height: 25px
     list-style: none
@@ -48,6 +69,7 @@
     color: $text
     &--active
       color: $primary
+      font-weight: bold
   &__image
     width: 100%
     height: 350px
@@ -65,6 +87,7 @@
   &__bottom
     display: flex
     flex-direction: row
+    align-items: center
     justify-content: space-between
     margin-bottom: 60px
   &__title
@@ -85,4 +108,10 @@
     line-height: 36px
     color: $text
     margin-left: 10px
+  &__cart
+    margin-top: 5px
+    margin-right: 10px
+  &__link
+    width: 26px
+    height: 26px
     
